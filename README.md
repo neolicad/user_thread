@@ -1,5 +1,5 @@
 # user_thread
-A small program for creating user threads.
+A 32bit program for creating user threads.
 
 ## Usage
 ```c
