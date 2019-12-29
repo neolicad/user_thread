@@ -23,6 +23,8 @@ void init_main_thread(void (*func)()) {
 }
 
 void create_thread(void (*func)()) {
+  // TODO: this is a bug because the slot can be 0, or out of range, or already 
+  // occupied. Fix it.
   create_thread_internal(func, next_available++, &quit_thread);
 }
 
