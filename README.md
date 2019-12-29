@@ -13,6 +13,9 @@ int main(void) {
 }
 ```
 
+## Bug
+We just increment the index to assign the thread slot. This is wrong. Fix it later.
+
 ## Model
 After the first yield(), we will jump across threads (we will never come back to the inialization main function). 
 There is a main thread which just continuously yield and will exit the process when return. Other threads execute
